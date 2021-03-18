@@ -1,16 +1,70 @@
-html,
-body {
-  padding: 0;
+
+@import '~antd/dist/antd.css';
+@import '~highlight.js/styles/a11y-light.css';
+
+#components-layout-demo-top-side .logo {
+  float: left;
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.ant-row-rtl #components-layout-demo-top-side .logo {
+  float: right;
+  margin: 16px 0 16px 24px;
+}
+
+.site-layout-background {
+  background: #fff;
+}
+
+.calendar-card {
+  border: 1px solid #f0f0f0;
+  border-radius: 2px;
+}
+
+.row-with-background {
+  min-width: 100%;
+  min-height: 400px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('./img/temp_small.jpg');
+}
+
+.profile-content{
+  z-index: 10;
+}
+
+.events {
+  list-style: none;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
+}
+.events .ant-badge-status {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  text-overflow: ellipsis;
+  font-size: 12px;
+}
+.notes-month {
+  text-align: center;
+  font-size: 28px;
+}
+.notes-month section {
+  font-size: 28px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.form {
+  width: 550px;
+  height: 300px;
+  padding: 30px;
+  padding-top: 40px;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  border: 1px solid rgb(218, 218, 218);
 }
 
-* {
-  box-sizing: border-box;
-}
